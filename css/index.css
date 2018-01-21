@@ -1,0 +1,677 @@
+/* 通用选择器（选择所有标签）：清除默认样式 */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body{
+	background: #f5f5f5;
+	font-size: 14px;
+}
+.first{
+	/* 1---width: 1080px;
+	height: 1377px;
+    100px=1rem*/
+	/* 2---width: 10.80rem; */
+	width: 100%;
+	height: 13.77rem;
+	/* 渐变色：linear-gradient(#3dc3ff,#45e1ff) */
+	background-image: url('../img/screen.png'),linear-gradient(#3dc3ff,#45e1ff);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	/* cover充满整个容器 */
+	background-size: 100% auto,cover;
+	/* 内容有超出加即避免出现横向滚动条 */
+	overflow: hidden;
+}
+.first .pos{
+	width: 100%;
+	height: 1.6rem;
+	color: #ffffff;
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 1.6rem;
+}
+.first .air{
+	width: 2.1rem;
+	height: 1.26rem;
+	background: #f1ab62;
+	border-radius: 0.15rem;
+	margin-left: 0.27rem;
+}
+.first .air h4{
+	font-size: 0.24rem;
+	color: #fff;
+	text-align: center;
+	line-height: 0.6rem;
+}
+.first .air h5{
+	font-size: 0.34rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 400;
+}
+.first .title1{
+	width: 100%; 
+	height: 1.3rem;
+	font-size: 1.3rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+.first .title2{
+	width: 100%; 
+	height: 0.58rem;
+	font-size: 0.58rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.44rem;
+}
+.first .title3{
+	width: 100%;
+	height: 0.36rem;
+	font-size:0.36rem; 
+	color: #fff;
+	text-align: center;
+	margin-top: 0.35rem;
+}
+.first .title4{
+	width: 100%;
+	height: 0.4rem;
+	font-size:0.4rem; 
+	color: #fff;
+	text-align: center;
+	margin-top: 1.32rem;
+}
+.second{
+	width: 100%;
+	height: 2.88rem;
+	background: #fff;
+	color: black;
+	border-bottom:0.03rem solid #e4e4e4;
+
+}
+.second .today{
+	width: 5.3rem;
+    height: 1.47rem;
+    border-right:0.03rem solid #e4e4e4;
+    float: left;
+ 	margin-top: 0.72rem;
+ 	/* background: red; */
+}
+.second .tomorrow{
+	width: 5.37rem;
+    height: 1.47rem;
+    margin-top: 0.72rem;
+    /* background: blue; */
+    float: left;
+}
+.second .today .top{
+	width: 100%;
+	height: 0.6rem;
+	/* background: red;  */
+	
+}
+.second .today .top .todyText{
+	width: 0.95rem;
+	float: left;
+	height: 100%;
+	line-height: 0.6rem;
+	margin-left: 0.56rem;
+}
+.second .today .top .tem{
+	float: right;
+	width: 1.65rem;
+	height: 100%;
+	line-height: 0.6rem;
+	margin-right: 0.59rem;
+}
+.second .today .bottom{
+	width: 100%;
+	height: 1.41rem;
+	/* background: yellow; */
+}
+.second .today .bottom .con{
+	float: left;
+	width: 1.9rem;
+	height: 100%;
+	line-height: 1.41rem;
+	margin-left: 0.56rem;
+}
+.second .today .bottom .conPic{
+	float: right;
+	width: 0.56rem;
+	height: 0.56rem;
+	margin-right:  0.59rem;
+	/* background-image: url('../img/0.png'); */
+	background-size: cover;
+	margin-top: 0.33rem;
+}
+.second .tomorrow .top{
+	width: 100%;
+	height: 0.6rem;
+	/* background: red;  */
+	
+}
+.second .tomorrow .top .todyText{
+	width: 0.95rem;
+	float: left;
+	height: 100%;
+	line-height: 0.6rem;
+	margin-left: 0.56rem;
+}
+.second .tomorrow .top .tem{
+	float: right;
+	width: 1.65rem;
+	height: 100%;
+	line-height: 0.6rem;
+	margin-right: 0.59rem;
+}
+.second .tomorrow .bottom{
+	width: 100%;
+	height: 1.41rem;
+	/* background: yellow; */
+}
+.second .tomorrow .bottom .con{
+	float: left;
+	width: 1.9rem;
+	height: 100%;
+	line-height: 1.41rem;
+	margin-left: 0.56rem;
+}
+.second .tomorrow .bottom .conPic{
+	float: right;
+	width: 0.56rem;
+	height: 0.56rem;
+	margin-right:  0.59rem;
+	/* background-image: url('../img/2.png'); */
+	background-size: cover;
+	margin-top: 0.33rem;
+}
+.third{
+	width: 100%;
+	/* 因为padding会撑大盒子高度3.88减去0.88*2 */
+	height: 2.08rem;
+	background-color: #fff;
+	margin-top: 0.27rem;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom:  0.03rem solid #e4e4e4;
+	padding: 0.88rem 0 0.88rem 0;
+	/* background: red; */
+	/* x方向出现滚动条 */
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+/* 滚动条宽为0 */
+.third::-webkit-scrollbar{
+	width: 0;
+}
+.third .wrap{
+	width: 100%;
+	/* height: 100%; 高度不设置可以根据内容自动撑开*/
+	/* background: yellow; */
+	/* 弹性布局盒子或用浮动 */
+	display: flex;
+}
+.third .wrap .box{
+	width: 1.95rem;
+	height: 100%;
+	/* background: blue; */
+    flex-shrink: 0; 
+ 	/*测试时候使用该句最后删掉 border-right: 0.01rem solid #000; */
+}
+.third .wrap .box .time{
+	/* 宽高不设置默认和父级 */
+	font-size: 0.24rem;
+	color:#999;
+	text-align: center;
+}
+.third .wrap .box .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	/* background-image: url('../img/1.png'); */
+	background-size: 100%;
+	/* auto是在box中水平居中的意思 */
+	margin: 0.57rem auto 0.5rem auto;
+}
+.third .wrap .box .timeTem{
+	font-size:0.26rem;
+	color: #333;
+	text-align: center;
+}
+.fourth{
+	width: 100%;
+	height: 6.42rem;
+	background-color: #fff;
+	margin-top: 0.27rem;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: : 0.03rem solid #e4e4e4;
+	padding: 0.88rem 0 0.88rem 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.fourth::-webkit-scrollbar{
+	width: 0;
+}
+.fourth .wrap{
+	width: 100%;
+	display: flex;
+}
+.fourth .wrap .box{
+	width: 2.72rem;
+	height: 100%;
+	flex-shrink: 0; 
+ 	
+
+}
+.fourth .wrap .box .date{
+	font-size: 0.24rem;
+	color: #999;
+	text-align: center;
+}
+.fourth .wrap .box .tianqi{
+	font-size: 0.36rem;
+	color: #333333;
+	text-align: center;
+	margin-top: 0.44rem;
+}
+.fourth .wrap .box .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	/* background-image: url('../img/2.png'); */
+	background-size: 100%;
+	/* auto是在box中水平居中的意思 */
+	margin: 0.57rem auto 0.57rem auto;
+}
+.fourth .wrap .box .heigher{
+	font-size: 0.28rem;
+	color: #333333;
+	text-align: center;
+	margin-top: 0.47rem;
+}
+.fourth .wrap .box .lower{
+	font-size: 0.28rem;
+	color: #333333;
+	text-align: center;
+	margin-top: 0.47rem;
+}
+.fourth .wrap .box .wind{
+	font-size: 0.27rem;
+	color: #888888;
+	text-align: center;
+	margin-top: 0.6rem;
+}
+.fourth .wrap .box .jishu{
+	font-size: 0.29rem;
+	color: #888888;
+	text-align: center;
+	margin-top: 0.45rem;
+}
+
+
+.five{
+	width:100%;
+	height: 6.80rem; 
+	background: #f5f5f5;
+	margin-top: 0.3rem;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	/* overflow-x: auto;  
+	overflow-y: hidden; */
+}
+.five .top{
+	width: 100%;
+	height: 2.67rem;
+    background: #ffffff;
+    border-bottom: 0.03rem solid #e4e4e4;
+}
+.five .bottom{
+	width: 100%;
+	height: 2.67rem;
+    background: #ffffff;
+    border-bottom: 0.03rem solid #e4e4e4;
+}
+.five .top .f1{
+	width: 2.67rem;
+	height: 100%;
+	float: left;
+	border-right: 0.03rem solid #e4e4e4; 
+}
+.five .top .f2{
+	width: 2.67rem;
+	height: 100%;
+	float: left;
+	border-right: 0.03rem solid #e4e4e4; 
+}
+.five .top .f3{
+	width: 2.67rem;
+	height: 100%;
+	float: left;
+	border-right: 0.03rem solid #e4e4e4; 
+}
+.five .top .f4{
+	width: 2.67rem;
+	height: 100%;
+	float: left; 
+}
+.five .top .f1 .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	background-image: url('../img/1.png');
+    background-size: 100%;
+	/*空气墙 设置左右水平居中 */
+	margin: 0.57rem auto 0.2rem auto;
+}
+.five .top .f1 .word{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0.57rem;
+}
+.five .top .f1 .word .w1{
+	font-size: 0.36rem;
+	color: #434343;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .top .f1 .word .w2{
+	font-size: 0.36rem;
+	color: #999999;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .top .f2 .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	background-image: url('../img/1.png');
+    background-size: 100%;
+	/*空气墙 设置左右水平居中 */
+	margin: 0.57rem auto 0.2rem auto;
+}
+.five .top .f2 .word{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0.57rem;
+}
+.five .top .f2 .word .w1{
+	font-size: 0.36rem;
+	color: #434343;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .top .f2 .word .w2{
+	font-size: 0.36rem;
+	color: #999999;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .top .f3 .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	background-image: url('../img/1.png');
+    background-size: 100%;
+	/*空气墙 设置左右水平居中 */
+	margin: 0.57rem auto 0.2rem auto;
+}
+.five .top .f3 .word{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0.57rem;
+}
+.five .top .f3 .word .w1{
+	font-size: 0.36rem;
+	color: #434343;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .top .f3 .word .w2{
+	font-size: 0.36rem;
+	color: #999999;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .top .f4 .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	background-image: url('../img/1.png');
+    background-size: 100%;
+	/*空气墙 设置左右水平居中 */
+	margin: 0.57rem auto 0.2rem auto;
+}
+.five .top .f4 .word{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0.57rem;
+}
+.five .top .f4 .word .w1{
+	font-size: 0.36rem;
+	color: #434343;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .top .f4 .word .w2{
+	font-size: 0.36rem;
+	color: #999999;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .bottom .f1{
+	width: 2.67rem;
+	height: 100%;
+	float: left;
+	border-right: 0.03rem solid #e4e4e4; 
+}
+.five .bottom .f2{
+	width: 2.67rem;
+	height: 100%;
+	float: left;
+	border-right: 0.03rem solid #e4e4e4; 
+}
+.five .bottom .f3{
+	width: 2.67rem;
+	height: 100%;
+	float: left;
+	border-right: 0.03rem solid #e4e4e4; 
+}
+.five .bottom .f4{
+	width: 2.67rem;
+	height: 100%;
+	float: left; 
+}
+.five .bottom .f1 .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	background-image: url('../img/1.png');
+    background-size: 100%;
+	/*空气墙 设置左右水平居中 */
+	margin: 0.57rem auto 0.2rem auto;
+}
+.five .bottom .f1 .word{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0.57rem;
+}
+.five .bottom .f1 .word .w1{
+	font-size: 0.36rem;
+	color: #434343;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .bottom .f1 .word .w2{
+	font-size: 0.36rem;
+	color: #999999;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .bottom .f2 .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	background-image: url('../img/1.png');
+    background-size: 100%;
+	/*空气墙 设置左右水平居中 */
+	margin: 0.57rem auto 0.2rem auto;
+}
+.five .bottom .f2 .word{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0.57rem;
+}
+.five .bottom .f2 .word .w1{
+	font-size: 0.36rem;
+	color: #434343;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .bottom .f2 .word .w2{
+	font-size: 0.36rem;
+	color: #999999;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .bottom .f3 .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	background-image: url('../img/1.png');
+    background-size: 100%;
+	/*空气墙 设置左右水平居中 */
+	margin: 0.57rem auto 0.2rem auto;
+}
+.five .bottom .f3 .word{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0.57rem;
+}
+.five .bottom .f3 .word .w1{
+	font-size: 0.36rem;
+	color: #434343;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .bottom .f3 .word .w2{
+	font-size: 0.36rem;
+	color: #999999;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .bottom .f4 .icon{
+	width: 0.55rem;
+	height: 0.55rem;
+	background-image: url('../img/1.png');
+    background-size: 100%;
+	/*空气墙 设置左右水平居中 */
+	margin: 0.57rem auto 0.2rem auto;
+}
+.five .bottom .f4 .word{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0.57rem;
+}
+.five .bottom .f4 .word .w1{
+	font-size: 0.36rem;
+	color: #434343;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+.five .bottom .f4 .word .w2{
+	font-size: 0.36rem;
+	color: #999999;
+	/* 文字样式：水平居中 */
+	text-align: center;
+}
+
+
+.city{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+    /*隐藏白色块（点击关闭则消失或出现js实现）*/
+     display: none;  
+     overflow-y: auto;
+}
+.city::-webkit-scrollbar{
+	width: 0;
+}
+.city .search{
+	width: 100%;
+	height: 1.3rem;
+	/* background: red; */
+	border-bottom: 0.03rem solid #e4e4e4;
+	position: fixed;
+	top: 0;
+	left: 0;
+    background: #fff;
+    z-index: 10;
+}
+
+.city .search .searchBox{
+	/* 8.61-0.93 */
+	width: 7.68rem;
+	height: 0.86rem;
+	border-radius: 0.14rem;
+	background: #f2f2f2;
+    border: none;
+    margin: 0.24rem 0 0 0.36rem;
+    padding-left:  0.93rem;
+	font-size: 0.32rem;
+	color: #808080;
+	float: left;
+}
+.city .search .button{
+	float: left;
+	font-size: 0.36rem;
+	color: #434343;
+	width: 1.83rem;
+	height: 0.86rem;
+	margin-top: 0.24rem;
+	text-align: center;
+	line-height:0.86rem;
+	/* background: blue;  */
+}
+.city .citys{
+	width: 100%;
+	/* 高度由内容撑开或超出部分隐藏 */
+	overflow: hidden;
+	padding:0.34rem;
+	/* background: red; */
+	/* 盒子实际大小都算上 */
+	box-sizing: border-box;
+	/* margin-top: 1.4rem; */
+}
+.city .city1{
+	margin-top: 1.4rem;
+}
+.city .citys .title{
+	width: 100%;
+	font-size: 0.36rem;
+	color: #444444;
+
+}
+.city .citys .con{
+	width: 100%;
+	/* background: blue; */
+	margin-top: 0.4rem;
+	overflow: hidden;
+}
+.city .citys .con .box{
+	width: 3.16rem;
+	height: 0.8rem;
+	background:#f2f2f2;
+	border-radius: 0.4rem;
+	font-size: 0.3rem;
+	color: #4c4c4c;
+	text-align: center;
+	line-height: 0.8rem;
+	float: left;
+	margin-right:0.3rem;
+	margin-bottom: 0.22rem;
+}
+.city .citys .con .box:nth-child(3n){
+    margin-right: 0;
+}
+/*  city的第三到第六个孩子的上边距设为0 或者.html中改变class名
+.city .citys:first-child(1){
+	margin-top: 0;
+} 
+ */
